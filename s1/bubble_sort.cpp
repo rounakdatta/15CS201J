@@ -4,9 +4,7 @@ using namespace std;
 void display(int* v, int sizex)
 {
 	for(int i=0;i<sizex;i++)
-	{
 		cout<<v[i]<<"\n";
-	}
 }
 
 void swap(int* m, int* n)
@@ -37,7 +35,17 @@ int main()
 {
 	int a[]={2,5,1,15,12,11,21,7,3,20,31,17,0,19,28};
 	int a_size=sizeof(a)/sizeof(a[0]);
+	clock_t t;
+   	t = clock();
+    	
 	bubblesort(a, a_size);
 	display(a, a_size);
+	
+    	t = clock() - t;
+    	double runtime = ((double)t)/CLOCKS_PER_SEC;
+ 
+    	printf("\n\nTime Complexity : %fs", runtime);
+	
+	
 	return 0;
 }
