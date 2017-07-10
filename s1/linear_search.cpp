@@ -3,13 +3,12 @@
 
 void linearsearch(int x[8], int y[4], int m, int n)
 {
-	int i, j;
 	bool c;
-	for(i=0; i<n; i++)
+	for(int i=0; i<n; i++)
 	{
 		c = 0;
 		printf("\nsearch query[%d] : ",y[i]);
-		for(j=0;j<m;j++)
+		for(int j=0;j<m;j++)
 		{
 			if(y[i]==x[j])
 			{
