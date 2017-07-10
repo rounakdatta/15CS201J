@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<time.h>
 
 void linearsearch(int x[8], int y[4], int m, int n)
 {
@@ -28,7 +29,14 @@ int main()
 	int q[]={0,2,5,8,52,79,11};
 	int a_size=sizeof(a)/sizeof(a[0]);
 	int q_size=sizeof(q)/sizeof(q[0]);
-
-	linearsearch(a,q,a_size,q_size);
+	
+  	clock_t t;
+   	t = clock();
+    	linearsearch(a,q,a_size,q_size);
+    	t = clock() - t;
+    	double runtime = ((double)t)/CLOCKS_PER_SEC;
+ 
+    	printf("\n\nTime Complexity : %fs", runtime);
+	
 	return 0;
 }
