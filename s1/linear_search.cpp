@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<stdio.h>
 #include<time.h>
 
 void linearsearch(int x[8], int y[4], int m, int n)
