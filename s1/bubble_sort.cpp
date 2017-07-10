@@ -44,8 +44,7 @@ int main()
     	t = clock() - t;
     	double runtime = ((double)t)/CLOCKS_PER_SEC;
  
-    	printf("\n\nTime Complexity : %fs", runtime);
-	
+    	cout<<"\n\nTime Complexity : "<<runtime<<"s";
 	
 	return 0;
 }
