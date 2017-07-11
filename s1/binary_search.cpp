@@ -56,7 +56,7 @@ int main()
 	clock_t t;
    	t = clock();
     	
-	bubblesort(a,a_size,q);
+	bubblesort(a,a_size);
 	search(a,a_size,q);
 	
     	t = clock() - t;
