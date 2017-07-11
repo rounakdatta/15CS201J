@@ -23,15 +23,40 @@ void search(int* x, int big, int query)
 		cout<<"Not found!";
 }
 
+void swap(int* m, int* n)
+{
+	int q = (*m) ^ (*n);
+	*m = q^(*m);
+	*n = q^(*n);
+}
+
+void bubblesort(int* x, int sizex)
+{
+	bool c=0;
+	do
+	{
+		c=0;
+		for(int i=0;i<(sizex-1);i++)
+		{
+			if(x[i] > x[i+1])
+			{
+				swap(&x[i], &x[i+1]);
+				c=1;
+			}
+		}
+	}while(c!=0);
+}
+
 int main()
 {
-	int a[]={2,4,6,8,10,12,14,16,18,20};
+	int a[]={2,4,19,6,8,0,10,12,7,14,16,18,5,20,3};
 	int q=24;
 	int a_size=sizeof(a)/sizeof(a[0]);
 
 	clock_t t;
    	t = clock();
     	
+	bubblesort(a,a_size,q);
 	search(a,a_size,q);
 	
     t = clock() - t;
