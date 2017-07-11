@@ -59,10 +59,10 @@ int main()
 	bubblesort(a,a_size,q);
 	search(a,a_size,q);
 	
-    t = clock() - t;
-    double runtime = ((double)t)/CLOCKS_PER_SEC;
+    	t = clock() - t;
+    	double runtime = ((double)t)/CLOCKS_PER_SEC;
  
-    cout<<"\n\nTime Complexity : "<<runtime<<"s";
+    	cout<<"\n\nTime Complexity : "<<runtime<<"s";
 
 	return 0;
 }
