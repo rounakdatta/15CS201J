@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bin/queue/queue.h"
 #include "bin/llist/llist.h"
+#include "bin/stack/stack.h"
 
 int main()
 {
@@ -13,6 +14,7 @@ int main()
 			llistops();
 			break; 
 		case 2: 
+			stackops();
 			break;
 		case 3:
 			qops();
