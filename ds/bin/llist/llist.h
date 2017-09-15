@@ -46,7 +46,7 @@ void display(lnode *head){
 void llistops()
 {
   int ch;
-  struct lnode *head = NULL;
+  lnode *head = NULL;
   do
   {
     cout<<"----\n0.Exit\n1.push_front\n2.push_end\n3.display\n----"<<endl;
