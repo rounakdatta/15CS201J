@@ -2,6 +2,7 @@
 #include "bin/queue/queue.h"
 #include "bin/llist/llist.h"
 #include "bin/stack/stack.h"
+#include "bin/tree/tree.h"
 
 int main()
 {
@@ -20,6 +21,7 @@ int main()
 			qops();
 			break;
 		case 4:
+			treeops();
 			break;
 	}
 	return 0;
