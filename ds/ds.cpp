@@ -1,8 +1,8 @@
 #include <iostream>
-#include "bin/queue/queue.h"
-#include "bin/llist/llist.h"
-#include "bin/stack/stack.h"
-#include "bin/tree/tree.h"
+#include "src/queue/queue.h"
+#include "src/llist/llist.h"
+#include "src/stack/stack.h"
+#include "src/tree/tree.h"
 
 int main()
 {

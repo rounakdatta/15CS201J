@@ -1,10 +1,10 @@
 #include <iostream>
 #include "src/display.h"
 #include "src/swap.h"
-#include "bin/bubble_sort.h"
-#include "bin/insertion_sort.h"
-#include "bin/selection_sort.h"
-#include "bin/merge_sort.h"
+#include "src/bubble_sort.h"
+#include "src/insertion_sort.h"
+#include "src/selection_sort.h"
+#include "src/merge_sort.h"
 
 int main()
 {

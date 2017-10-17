@@ -1,6 +1,6 @@
 #include <iostream>
-#include "bin/linear_search.h"
-#include "bin/binary_search.h"
+#include "src/linear_search.h"
+#include "src/binary_search.h"
 
 int main()
 {
