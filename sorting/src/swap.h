@@ -2,7 +2,8 @@
 
 void swap(int* m, int* n)
 {
-	int q = (*m) ^ (*n);
-	*m = q^(*m);
-	*n = q^(*n);
+	int temp;
+	temp = *m;
+	*m = *n;
+	*n = temp;
 }
